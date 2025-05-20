@@ -8,4 +8,5 @@ urlpatterns = [
     path('producto/<int:producto_id>/', views.detalle_producto, name='detalle_producto'),
     path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(), name='logout'),
-    path('registro/', views.registro, name='registro'),]
+    path('registro/', views.registro, name='registro'),
+    path('admin-panel/', views.admin_panel, name='admin-panel-demo'),]
